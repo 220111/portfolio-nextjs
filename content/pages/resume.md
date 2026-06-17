@@ -1,16 +1,18 @@
 ---
 title: Resume
 navLabel: Resume
-navOrder: "3"
+navOrder: '3'
 showInNav: true
+externalUrl: ''
+image: ''
 ---
 ## EDUCATION:
 
 ### Rose-Hulman Institute of Technology, Terre Haute, IN
 
-- Bachelor of Science, Software Engineering - May 2026
+- Bachelor of Science, Software Engineering - Graduated May 2026
 - Minor in Economics
-- Status: Second-year student - Deans List Winter 2022 & Fall 2023
+- Deans List Winter 2022 & Fall 2023
 
 ### Denton High School, Denton, TX
 

@@ -1,10 +1,8 @@
 # hmorin.com — portfolio
 
 A statically-generated rebuild of [hmorin.com](https://hmorin.com) using
-**Next.js (App Router)**. The site is content-managed by an external,
-Git-backed CMS: **no editable copy is hardcoded in components** — every heading,
-bio, project description, date, and link lives in Markdown files under
-[`content/`](content/) and is read at build time.
+**Next.js**. The site is content-managed by a custom external,
+Git-backed CMS..
 
 ## Tech
 
@@ -58,12 +56,12 @@ root. Its top-level `schemas` array describes every collection. Each schema's
 frontmatter key exactly** — except the `rich-text` field, named `body`, which
 maps to the Markdown **body** of the file (not a frontmatter key).
 
-| Schema (config) | `path` → folder      | Notes |
-| --------------- | -------------------- | ----- |
-| `Pages`         | `content/pages/`     | `navLabel`/`navOrder`/`showInNav` drive the nav; `externalUrl` makes a nav-only link with no route. |
-| `Projects`      | `content/projects/`  | Listed on `/portfolio`; each file also generates a `/portfolio/<slug>/` page. |
-| `Songs`         | `content/songs/`     | `embedUrl` is rendered as an Odesli iframe on `/songs`. |
-| `Settings`      | `content/settings/`  | Single `site.md` entry: site name + contact email. |
+| Schema (config) | `path` → folder     | Notes                                                                                               |
+| --------------- | ------------------- | --------------------------------------------------------------------------------------------------- |
+| `Pages`         | `content/pages/`    | `navLabel`/`navOrder`/`showInNav` drive the nav; `externalUrl` makes a nav-only link with no route. |
+| `Projects`      | `content/projects/` | Listed on `/portfolio`; each file also generates a `/portfolio/<slug>/` page.                       |
+| `Songs`         | `content/songs/`    | `embedUrl` is rendered as an Odesli iframe on `/songs`.                                             |
+| `Settings`      | `content/settings/` | Single `site.md` entry: site name + contact email.                                                  |
 
 Field `type` is one of `text`, `rich-text`, `boolean`, `date`, `image`. Images
 referenced by `image` fields live in [`public/`](public/) and frontmatter stores

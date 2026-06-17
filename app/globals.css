@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600&family=Ubuntu+Mono:wght@700&display=swap');
+
+/* --- minimal reset (replaces normalize.css) --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --vertical-space: 2rem;
+  --horizontal-space: 3rem;
+
+  --background-color: #4f495c;
+  --main-text-color: #cbc5d8;
+  --pop-color: #8a74b9;
+  --link-color: #906ddb;
+
+  --mobile-width: 30em;
+}
+
+main {
+  background-color: var(--background-color);
+  border-radius: 2rem;
+}
+
+body {
+  background-color: var(--pop-color);
+}
+
+#body {
+  margin-bottom: 3rem;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'Red Hat Display', sans-serif;
+  color: var(--main-text-color);
+
+  background-color: var(--background-color);
+  background-image: url('/images/cubes.png');
+  min-height: 96vh;
+}
+
+a {
+  color: var(--main-text-color);
+  font-size: 1.2em;
+}
+
+a:hover {
+  color: var(--link-color);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  font-family: 'Ubuntu Mono', monospace;
+  color: var(--main-text-color);
+}
+
+#about #body img {
+  width: 15em;
+}
+
+#body > * {
+  padding-left: var(--horizontal-space);
+  padding-right: var(--horizontal-space);
+}
+
+p {
+  max-width: 50em;
+}
+
+#body {
+  display: grid;
+  grid-template-areas:
+    'head head'
+    'nav nav'
+    'main main'
+    'foot foot';
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+@media screen and (min-width: 35em) {
+  #body {
+    display: grid;
+    grid-template-areas:
+      'head head head'
+      'nav main blank'
+      'foot foot foot';
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+}
+
+#body > header {
+  grid-area: head;
+}
+
+#body > nav {
+  grid-area: nav;
+}
+
+#body > nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#body > nav ul li {
+  margin-top: 1rem;
+}
+
+#body > nav ul a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+#body > main {
+  grid-area: main;
+}
+
+#body > footer {
+  grid-area: foot;
+}
+
+header,
+footer {
+  padding-top: var(--vertical-space);
+  padding-bottom: var(--vertical-space);
+}
+
+footer h1,
+header h1 {
+  margin: 0;
+}
+
+@media screen and (min-width: 35em) {
+  #portfolio > #body > main {
+    max-width: 50em;
+  }
+}
+
+#portfolio > #body ul#portfolioItems {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  list-style-type: none;
+  padding: 0;
+}
+
+#portfolio > #body ul#portfolioItems li {
+  border: var(--pop-color) solid 2px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 35em) {
+  #portfolio > #body ul#portfolioItems li {
+    flex-basis: 46%;
+    padding-right: 2%;
+  }
+}
+
+#portfolio > #body ul#portfolioItems li img {
+  max-width: 20rem;
+}
+
+footer a {
+  font-size: 10pt;
+}
+
+/* --- additions for CMS-driven detail pages & song embeds --- */
+.project-detail img {
+  max-width: 20rem;
+}
+
+.song-embed {
+  margin: 1rem 0;
+  border: 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+}

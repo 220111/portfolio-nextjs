@@ -1,0 +1,15 @@
+# dependencies
+/node_modules
+
+# next.js / static export
+/.next
+/out
+
+# typescript
+next-env.d.ts
+*.tsbuildinfo
+
+# misc
+.DS_Store
+*.log
+.vercel

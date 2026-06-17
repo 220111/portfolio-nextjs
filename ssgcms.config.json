@@ -1,0 +1,51 @@
+{
+  "schemas": [
+    {
+      "name": "Pages",
+      "path": "pages",
+      "fields": [
+        { "name": "title", "label": "Title", "type": "text" },
+        { "name": "navLabel", "label": "Nav Label", "type": "text" },
+        { "name": "navOrder", "label": "Nav Order", "type": "text" },
+        { "name": "showInNav", "label": "Show In Nav", "type": "boolean" },
+        { "name": "externalUrl", "label": "External URL", "type": "text" },
+        { "name": "image", "label": "Image", "type": "image" },
+        { "name": "body", "label": "Body", "type": "rich-text" }
+      ]
+    },
+    {
+      "name": "Projects",
+      "path": "projects",
+      "fields": [
+        { "name": "title", "label": "Title", "type": "text" },
+        { "name": "summary", "label": "Summary", "type": "text" },
+        { "name": "role", "label": "Role", "type": "text" },
+        { "name": "url", "label": "Project URL", "type": "text" },
+        { "name": "thumbnail", "label": "Thumbnail", "type": "image" },
+        { "name": "date", "label": "Date", "type": "date" },
+        { "name": "featured", "label": "Featured", "type": "boolean" },
+        { "name": "order", "label": "Order", "type": "text" },
+        { "name": "body", "label": "Description", "type": "rich-text" }
+      ]
+    },
+    {
+      "name": "Songs",
+      "path": "songs",
+      "fields": [
+        { "name": "title", "label": "Title", "type": "text" },
+        { "name": "embedUrl", "label": "Embed URL", "type": "text" },
+        { "name": "order", "label": "Order", "type": "text" },
+        { "name": "body", "label": "Note", "type": "rich-text" }
+      ]
+    },
+    {
+      "name": "Settings",
+      "path": "settings",
+      "fields": [
+        { "name": "name", "label": "Site Name", "type": "text" },
+        { "name": "email", "label": "Contact Email", "type": "text" },
+        { "name": "body", "label": "Notes", "type": "rich-text" }
+      ]
+    }
+  ]
+}

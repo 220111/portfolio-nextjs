@@ -1,13 +1,17 @@
 ---
-title: DUUF Website
-summary: A current project with a local fellowship. Will be deployed to replace their current site after completion.
+url: 'https://dentonuuf.org/'
+date: '2024-09-01T00:00:00.000Z'
 role: Designed and Deployed
-url: https://duuf-web.vercel.app
-thumbnail: /images/duuf-web.png
-date: 2024-09-01
+order: '6'
+title: DUUF Website
+summary: >-
+  A web project with a local fellowship. Currently deployed to replace their
+  previous site. 
 featured: true
-order: "6"
+thumbnail: /images/duuf-web.png
 ---
-A current project with a local fellowship. Will be deployed to replace their current site after completion.
+A web project with a local fellowship. Currently deployed to replace their previous site. 
 
 Created using Hugo with a custom modified theme and TinaCMS to customize their editing needs.
+
+Provided much of the inspiration and real-world vetting of the idea/design of my custom CMS built for small or volunteer teams.
